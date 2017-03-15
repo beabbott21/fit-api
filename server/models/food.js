@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     classMethods: {
       associate: (models) => {
-        Food.belongsToMany(models.meal, { through: 'MealFood' });
+        Food.belongsToMany(models.Meal, { through: 'MealFood' });
       }
     }
   });
